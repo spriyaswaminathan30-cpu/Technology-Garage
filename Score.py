@@ -1,0 +1,18 @@
+def write():
+    name=str(input("Enter the name of the student: "))
+    mark1=int(input("Enter the mark1: "))
+    mark2=int(input("Enter the mark2: "))
+    mark3=int(input("Enter the mark3: "))
+    score=open("score_card.txt","a")
+    score.write(name+'|')
+    score.write(str(mark1)+'|')
+    score.write(str(mark2)+'|')
+    score.write(str(mark3)+"\n")
+    score.close()
+#write()
+def read():
+    verify=open("score_card.txt","r")
+    readvalue=verify.read()
+    print(readvalue)
+    verify.close()
+read()

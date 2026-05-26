@@ -1,0 +1,11 @@
+name=str(input("Enter the name of the student: "))
+mark1=int(input("enter the mark1: "))
+mark2=int(input("enter the mark2: "))
+mark3=int(input("enter the mark3: "))
+rank=open("score.txt",'a')
+rank.write(name+'|')
+rank.write(str(mark1)+'|')
+rank.write(str(mark2)+'|')
+rank.write(str(mark3)+"\n")
+rank.close()
+           

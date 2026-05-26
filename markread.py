@@ -1,0 +1,12 @@
+def mark():
+    name=str(input("Enter the name of the student:"))
+    mark1=int(input("Enter the mark1:"))
+    mark2=int(input("Enter the mark2:"))
+    mark3=int(input("Enter the mark3:"))
+    mark=open("fileread.txt", "a")
+    mark.write(name+'|')
+    mark.write(str(mark1)+'|')
+    mark.write(str(mark2)+'|')
+    mark.write(str(mark3)+"\n")
+    mark.close()
+mark()
